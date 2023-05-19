@@ -274,6 +274,9 @@ Sample successful response:
     "success": true
 }
 ```
+
+Please Note : Sample data above does not reflect the data in collections file, and should just be treaded as sample.
+
 ### Error Handling
 
 Errors are returned as json objects. 
