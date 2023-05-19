@@ -1,8 +1,10 @@
 {
 	"info": {
-		"_postman_id": "f0c1417d-5342-4d7e-9f28-0d8b59abe6bf",
+		"_postman_id": "8c27f5b6-eee2-43aa-80d4-c0c507cd3809",
 		"name": "udacity-fsnd-capstone-castingagency",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"description": "Collection to test Udacity Full Stack Nanodegree Capstone Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26483442"
 	},
 	"item": [
 		{
@@ -32,7 +34,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"age\":75,\r\n    \"name\": \"Amitabh Bachhan\",\r\n    \"gender\": \"male\"\r\n}",
+							"raw": "{\r\n    \"age\":45,\r\n    \"name\": \"Test Actor\",\r\n    \"gender\": \"male\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -58,7 +60,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Amitabh Bachhan\",\r\n    \"gender\": \"male\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Amir Khan Bachhan\",\r\n    \"gender\": \"male\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -84,7 +86,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"gender\": \"male\",\r\n    \"name\": \"Amitabh B\",\r\n    \"age\":76\r\n}",
+							"raw": "{\r\n    \"gender\": \"male\",\r\n    \"name\": \"Aamir Khaan\",\r\n    \"age\":58\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -92,13 +94,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{IP}}/actors/11",
+							"raw": "{{IP}}/actors/1",
 							"host": [
 								"{{IP}}"
 							],
 							"path": [
 								"actors",
-								"11"
+								"1"
 							]
 						}
 					},
@@ -137,13 +139,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{IP}}/actors/11",
+							"raw": "{{IP}}/actors/3",
 							"host": [
 								"{{IP}}"
 							],
 							"path": [
 								"actors",
-								"11"
+								"3"
 							]
 						}
 					},
@@ -155,13 +157,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{IP}}/actors/99999999",
+							"raw": "{{IP}}/actors/123456789",
 							"host": [
 								"{{IP}}"
 							],
 							"path": [
 								"actors",
-								"99999999"
+								"123456789"
 							]
 						}
 					},
@@ -196,7 +198,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Don\",\r\n    \"release_date\":\"2027-11-11\"\r\n}",
+							"raw": "{\r\n    \"movie_title\": \"Kab Banega Crorepati\",\r\n    \"release_date\":\"2069-01-01\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -216,13 +218,13 @@
 					"response": []
 				},
 				{
-					"name": "Post An Movie Negative",
+					"name": "Post A Movie - Negative",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Don\"\r\n}",
+							"raw": "{\r\n    \"title\": \"Kaun\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -242,13 +244,13 @@
 					"response": []
 				},
 				{
-					"name": "Update An Movie",
+					"name": "Update A Movie",
 					"request": {
 						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"The Terminal\",\r\n    \"release_date\" : \"2005-06-01\"\r\n}",
+							"raw": "{\r\n    \"movie_title\": \"Kyu Nahi Banega Crorepati\",\r\n    \"release_date\" : \"1981-02-04\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -256,20 +258,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{IP}}/movies/5",
+							"raw": "{{IP}}/movies/1",
 							"host": [
 								"{{IP}}"
 							],
 							"path": [
 								"movies",
-								"5"
+								"1"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Update An Movie Negative",
+					"name": "Update A Movie - Negative",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -283,13 +285,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{IP}}/movies/999",
+							"raw": "{{IP}}/movies/123456789",
 							"host": [
 								"{{IP}}"
 							],
 							"path": [
 								"movies",
-								"999"
+								"123456789"
 							]
 						}
 					},
@@ -314,18 +316,18 @@
 					"response": []
 				},
 				{
-					"name": "Delete A Movie Negative",
+					"name": "Delete A Movie - Negative",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{IP}}/movies/99999999",
+							"raw": "{{IP}}/movies/123456789",
 							"host": [
 								"{{IP}}"
 							],
 							"path": [
 								"movies",
-								"99999999"
+								"123456789"
 							]
 						}
 					},
@@ -381,7 +383,7 @@
 	"variable": [
 		{
 			"key": "IP",
-			"value": "{{IP_LOCAL}}",
+			"value": "{{IP_RENDER}}",
 			"type": "default"
 		},
 		{
@@ -396,17 +398,17 @@
 		},
 		{
 			"key": "ASSISTANT_TOKEN",
-			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjctM01sbjdLNWV5SnNxM1F5VEhESiJ9.eyJpc3MiOiJodHRwczovL3Vmc25kLnVrLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDY1MjEzYmM0MjQ0MTE2MGQwZDA1NzciLCJhdWQiOiJodHRwOi8vY2FzdGluZy1hZ2VuY3ktYXBpOjUwMDAiLCJpYXQiOjE2ODQzOTc4MDYsImV4cCI6MTY4NDQ4NDIwNiwiYXpwIjoiQ2lwMWZnZG81QXZKNUI5VGgzbXRMb2Jkejl2a3JJNDMiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.GlOnrUfOUH4qHBVAjPDsXnJ6EuRpm36l0ID6kzpVf8xu_Ks1LPw72e6jPM1Y8mTruYBqFev9_pq0io1N9xiBQLJTPL_mgi3ugPtnlz8tncZmqREjLUFeCsR0CS-HtUEmVNyElIiwSqAIgujTw5HriDkfPmCIPWls9lMAydJ_of_RxgzlGQtWLU6TQJiL7yWv_CQXt4ELgpHWsTQJQeNUVL64Maadri21mxNNPepTp4fvqiUKqiH9gQdNgytMPb2iPJY5SkroT85uIL9K3tONqOeowP_GutJfooifRph9aCxFM7rgruDrYdmHnd7YZXRDD-SItXZK6Oqi-W1CcAqzrg",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlVOX3hfRldDczV2N295WHB3MXhCUiJ9.eyJpc3MiOiJodHRwczovL3Rlc3RhdXRoLWNqLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MmM0NjRkNDhhMDZjNTc2YjM3MWYzMjYiLCJhdWQiOiJmc25kLWNhcHN0b25lIiwiaWF0IjoxNjU3MjkyNDU3LCJleHAiOjE2NTczNzg4NTcsImF6cCI6Ilo4ZWd4cnJjdDI1NjVnQk91c0hpQnpuRmgxcmc5VWkxIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.pV_SqTwrFPKm4AEp3rVPWVpuan67FcC3LWTpMAHzHGyw98zO4Am7-s69_QHjWVG-XavUJZQsMKjoTg9etdmKa7q12IpXg4QzH4Q2_AbMdYYlQL_hvnlOY_vXZXI3Z8AIoKauKMALbV_4T-c_BdlJpkZadaWsLneI97IcIxhMnJXS13r9BmzU7y7kLj0dw0fv5XfPS8wvmV0VGLsGP5GWoXkyQmZjO7aN_IM-9kullOevm1b4rmOzhhDsgsX8HtP_OGSAcIKhDOHO0x8WKsgRV0g1OJbtiW1MMyMH6BxdvzU1Zp8_XS7_0QzzMOog2aDqbHIWMOhZPE1CicMDj-is0A",
 			"type": "default"
 		},
 		{
 			"key": "DIRECTOR_TOKEN",
-			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjctM01sbjdLNWV5SnNxM1F5VEhESiJ9.eyJpc3MiOiJodHRwczovL3Vmc25kLnVrLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDY1MjJjODBjNGE4NzdhOGIxNzY2MWQiLCJhdWQiOiJodHRwOi8vY2FzdGluZy1hZ2VuY3ktYXBpOjUwMDAiLCJpYXQiOjE2ODQzOTc5NjEsImV4cCI6MTY4NDQ4NDM2MSwiYXpwIjoiQ2lwMWZnZG81QXZKNUI5VGgzbXRMb2Jkejl2a3JJNDMiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIl19.WiyGJBRiFWgUV-PORo7XSDZ1swcbDMq2TszICZIIvBjqxf2fndoL15NeAdRGg8MouwU2QNs7nzoeu8G374n0ZNYRZG51_NKDppt-PQ2Mqx43rKITL7-RjJBKU66jllcHlvfLwANToENmi8bZNMOjjnOUY4iGUhFhP8kpggyEfZqeKDt8HQswxT8NEX_sYP6-TK5boo1QCLVcR2JlDMJza_dshgZWjZkiffGZYClSig82ku7grU4-HoWJQXsfRwt2Ri7hSvm8hhUXo69VbWSTbK1MY1Z4mlNC2eQBy_fm-GKpqNjseNnbUtoAsSt8l7T51d9euBkza-fq5RpLrmJAfA",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlVOX3hfRldDczV2N295WHB3MXhCUiJ9.eyJpc3MiOiJodHRwczovL3Rlc3RhdXRoLWNqLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MmM0NjRkNDhhMDZjNTc2YjM3MWYzMjYiLCJhdWQiOiJmc25kLWNhcHN0b25lIiwiaWF0IjoxNjU3MjkyNDU3LCJleHAiOjE2NTczNzg4NTcsImF6cCI6Ilo4ZWd4cnJjdDI1NjVnQk91c0hpQnpuRmgxcmc5VWkxIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.pV_SqTwrFPKm4AEp3rVPWVpuan67FcC3LWTpMAHzHGyw98zO4Am7-s69_QHjWVG-XavUJZQsMKjoTg9etdmKa7q12IpXg4QzH4Q2_AbMdYYlQL_hvnlOY_vXZXI3Z8AIoKauKMALbV_4T-c_BdlJpkZadaWsLneI97IcIxhMnJXS13r9BmzU7y7kLj0dw0fv5XfPS8wvmV0VGLsGP5GWoXkyQmZjO7aN_IM-9kullOevm1b4rmOzhhDsgsX8HtP_OGSAcIKhDOHO0x8WKsgRV0g1OJbtiW1MMyMH6BxdvzU1Zp8_XS7_0QzzMOog2aDqbHIWMOhZPE1CicMDj-is0A",
 			"type": "default"
 		},
 		{
 			"key": "PRODUCER_TOKEN",
-			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjctM01sbjdLNWV5SnNxM1F5VEhESiJ9.eyJpc3MiOiJodHRwczovL3Vmc25kLnVrLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDY1MjM0NWM0MjQ0MTE2MGQwZDA1N2UiLCJhdWQiOiJodHRwOi8vY2FzdGluZy1hZ2VuY3ktYXBpOjUwMDAiLCJpYXQiOjE2ODQzOTgwMTcsImV4cCI6MTY4NDQ4NDQxNywiYXpwIjoiQ2lwMWZnZG81QXZKNUI5VGgzbXRMb2Jkejl2a3JJNDMiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.KcZyl3zS02VYWgKVzgHnezJKV6T2SCophS6pTp9wV9ECemkFv-ICTTCyWFIUc1LH7h5ZLpXtuaoRFxleIDKnR3EbC7qj6n6jJtj2G3_zSuEBqwIvEZJS-nSEdKYJ9T40ggEAmKF45uWSLZP6rZyjE_b5tEnyOylkHcwGmZbSlr_5vWkd_cxReE9VDhUrcBBHvB6LTHKHs_o_0YwJrxez2QBy7n4cd2VT9uGy7ggMFOsMC0qOr0DVT7sGDCHAE3e-BIHhEXTk-LLdq3nsuQfeBrimhE_ZSSWGg_aYofL9wgkXUj8yHW-QOyhPGgZPIk8FMEgCxoW0Oj0CWozT21He0A",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlVOX3hfRldDczV2N295WHB3MXhCUiJ9.eyJpc3MiOiJodHRwczovL3Rlc3RhdXRoLWNqLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MmM0NjRkNDhhMDZjNTc2YjM3MWYzMjYiLCJhdWQiOiJmc25kLWNhcHN0b25lIiwiaWF0IjoxNjU3MjkyNDU3LCJleHAiOjE2NTczNzg4NTcsImF6cCI6Ilo4ZWd4cnJjdDI1NjVnQk91c0hpQnpuRmgxcmc5VWkxIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.pV_SqTwrFPKm4AEp3rVPWVpuan67FcC3LWTpMAHzHGyw98zO4Am7-s69_QHjWVG-XavUJZQsMKjoTg9etdmKa7q12IpXg4QzH4Q2_AbMdYYlQL_hvnlOY_vXZXI3Z8AIoKauKMALbV_4T-c_BdlJpkZadaWsLneI97IcIxhMnJXS13r9BmzU7y7kLj0dw0fv5XfPS8wvmV0VGLsGP5GWoXkyQmZjO7aN_IM-9kullOevm1b4rmOzhhDsgsX8HtP_OGSAcIKhDOHO0x8WKsgRV0g1OJbtiW1MMyMH6BxdvzU1Zp8_XS7_0QzzMOog2aDqbHIWMOhZPE1CicMDj-is0A",
 			"type": "default"
 		}
 	]
