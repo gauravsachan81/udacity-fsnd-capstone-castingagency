@@ -36,6 +36,8 @@ The `requirements.txt` file has all required packages required for running the p
 
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension to handle cross origin requests from our frontend server.
 
+- [Gunicorn](https://gunicorn.org/) The Gunicorn "Green Unicorn" is a Python Web Server Gateway Interface HTTP server. It is a pre-fork worker model, ported from Ruby's Unicorn project.  
+
 ## Running the server
 
 From within the directory first ensure you are working using your created virtual environment.
