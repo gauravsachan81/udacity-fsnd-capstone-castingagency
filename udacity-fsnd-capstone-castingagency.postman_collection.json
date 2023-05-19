@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "f0c1417d-5342-4d7e-9f28-0d8b59abe6bf",
+		"name": "udacity-fsnd-capstone-castingagency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actors",
+			"item": [
+				{
+					"name": "Get all Actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}/actors",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post An Actor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\":75,\r\n    \"name\": \"Amitabh Bachhan\",\r\n    \"gender\": \"male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/actors",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post An Actor Negative",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Amitabh Bachhan\",\r\n    \"gender\": \"male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/actors",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update An Actor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\": \"male\",\r\n    \"name\": \"Amitabh B\",\r\n    \"age\":76\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/actors/11",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update An Actor Negative",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\": \"male\",\r\n    \"name\": \"Amitabh B\",\r\n    \"age\":76\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/actors/999",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete An Actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}/actors/11",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete An Actor Negative",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}/actors/99999999",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"actors",
+								"99999999"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "Get all Movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}/movies",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post A Movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Don\",\r\n    \"release_date\":\"2027-11-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/movies",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post An Movie Negative",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Don\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/movies",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update An Movie",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"The Terminal\",\r\n    \"release_date\" : \"2005-06-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/movies/5",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update An Movie Negative",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"The Terminal\",\r\n    \"release_date\" : \"2005-06-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}/movies/999",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}/movies/2",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Movie Negative",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}/movies/99999999",
+							"host": [
+								"{{IP}}"
+							],
+							"path": [
+								"movies",
+								"99999999"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}",
+					"host": [
+						"{{IP}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{PRODUCER_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "IP",
+			"value": "{{IP_HEROKU}}",
+			"type": "default"
+		},
+		{
+			"key": "IP_HEROKU",
+			"value": "https://cj-fsnd-capstone-castingagency.herokuapp.com/",
+			"type": "default"
+		},
+		{
+			"key": "IP_LOCAL",
+			"value": "http://127.0.0.1:8080/",
+			"type": "default"
+		},
+		{
+			"key": "ASSISTANT_TOKEN",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlVOX3hfRldDczV2N295WHB3MXhCUiJ9.eyJpc3MiOiJodHRwczovL3Rlc3RhdXRoLWNqLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MmM0NjRkNDhhMDZjNTc2YjM3MWYzMjYiLCJhdWQiOiJmc25kLWNhcHN0b25lIiwiaWF0IjoxNjU3MjkyNDU3LCJleHAiOjE2NTczNzg4NTcsImF6cCI6Ilo4ZWd4cnJjdDI1NjVnQk91c0hpQnpuRmgxcmc5VWkxIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.pV_SqTwrFPKm4AEp3rVPWVpuan67FcC3LWTpMAHzHGyw98zO4Am7-s69_QHjWVG-XavUJZQsMKjoTg9etdmKa7q12IpXg4QzH4Q2_AbMdYYlQL_hvnlOY_vXZXI3Z8AIoKauKMALbV_4T-c_BdlJpkZadaWsLneI97IcIxhMnJXS13r9BmzU7y7kLj0dw0fv5XfPS8wvmV0VGLsGP5GWoXkyQmZjO7aN_IM-9kullOevm1b4rmOzhhDsgsX8HtP_OGSAcIKhDOHO0x8WKsgRV0g1OJbtiW1MMyMH6BxdvzU1Zp8_XS7_0QzzMOog2aDqbHIWMOhZPE1CicMDj-is0A",
+			"type": "default"
+		},
+		{
+			"key": "DIRECTOR_TOKEN",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlVOX3hfRldDczV2N295WHB3MXhCUiJ9.eyJpc3MiOiJodHRwczovL3Rlc3RhdXRoLWNqLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MmM0NjRkNDhhMDZjNTc2YjM3MWYzMjYiLCJhdWQiOiJmc25kLWNhcHN0b25lIiwiaWF0IjoxNjU3MjkyNDU3LCJleHAiOjE2NTczNzg4NTcsImF6cCI6Ilo4ZWd4cnJjdDI1NjVnQk91c0hpQnpuRmgxcmc5VWkxIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.pV_SqTwrFPKm4AEp3rVPWVpuan67FcC3LWTpMAHzHGyw98zO4Am7-s69_QHjWVG-XavUJZQsMKjoTg9etdmKa7q12IpXg4QzH4Q2_AbMdYYlQL_hvnlOY_vXZXI3Z8AIoKauKMALbV_4T-c_BdlJpkZadaWsLneI97IcIxhMnJXS13r9BmzU7y7kLj0dw0fv5XfPS8wvmV0VGLsGP5GWoXkyQmZjO7aN_IM-9kullOevm1b4rmOzhhDsgsX8HtP_OGSAcIKhDOHO0x8WKsgRV0g1OJbtiW1MMyMH6BxdvzU1Zp8_XS7_0QzzMOog2aDqbHIWMOhZPE1CicMDj-is0A",
+			"type": "default"
+		},
+		{
+			"key": "PRODUCER_TOKEN",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlVOX3hfRldDczV2N295WHB3MXhCUiJ9.eyJpc3MiOiJodHRwczovL3Rlc3RhdXRoLWNqLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MmM0NjRkNDhhMDZjNTc2YjM3MWYzMjYiLCJhdWQiOiJmc25kLWNhcHN0b25lIiwiaWF0IjoxNjU3MjkyNDU3LCJleHAiOjE2NTczNzg4NTcsImF6cCI6Ilo4ZWd4cnJjdDI1NjVnQk91c0hpQnpuRmgxcmc5VWkxIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.pV_SqTwrFPKm4AEp3rVPWVpuan67FcC3LWTpMAHzHGyw98zO4Am7-s69_QHjWVG-XavUJZQsMKjoTg9etdmKa7q12IpXg4QzH4Q2_AbMdYYlQL_hvnlOY_vXZXI3Z8AIoKauKMALbV_4T-c_BdlJpkZadaWsLneI97IcIxhMnJXS13r9BmzU7y7kLj0dw0fv5XfPS8wvmV0VGLsGP5GWoXkyQmZjO7aN_IM-9kullOevm1b4rmOzhhDsgsX8HtP_OGSAcIKhDOHO0x8WKsgRV0g1OJbtiW1MMyMH6BxdvzU1Zp8_XS7_0QzzMOog2aDqbHIWMOhZPE1CicMDj-is0A",
+			"type": "default"
+		}
+	]
+}
