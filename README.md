@@ -1,17 +1,18 @@
 # Udacity Full Stack Nanodegree - Capstone Project - Casting Agency
 
-## Casting Agency Specs
+## Casting Agency - Specifications
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. 
 You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
 
-## Motivation for this project
+## Driver for putting up this project
 
-Capstone project of Udacity Fullstack Nanodegree program, allowing demonstration of varied aspects of Fullstack, including but not limited to SQLAlchemy (ORM), Postgres DB, Python Flask library, Auth0 authentication, Gunicorn Webserver and Render platform to develop and deploy APIs.
+Capstone project of Udacity Fullstack Nanodegree program, allowed demonstration of varied aspects of Fullstack, including but not limited to SQLAlchemy (ORM), Postgres DB, Python Flask library, Auth0 authentication, Gunicorn Webserver and Render platform to develop and deploy APIs. The Capstone project was followed by previous 4 projects which gradually built the concepts by focussed projects, leading upto the Capstone Project which is testing the knowledge on all the topics together.
 
 ## Getting Started
 
 ### Installing Dependencies
 
+Python is the main language used in the project.
 #### Python 3.7.9
 [Python Instllation](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
 
@@ -34,6 +35,8 @@ The `requirements.txt` file has all required packages required for running the p
 - [SQLAlchemy](https://www.sqlalchemy.org/) is the Python SQL toolkit and ORM that is utilized to handle the lightweight sqlite database. 
 
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension to handle cross origin requests from our frontend server.
+
+- [Gunicorn](https://gunicorn.org/) The Gunicorn "Green Unicorn" is a Python Web Server Gateway Interface HTTP server. It is a pre-fork worker model, ported from Ruby's Unicorn project.  
 
 ## Running the server
 
