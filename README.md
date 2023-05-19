@@ -1,12 +1,12 @@
 # Udacity Full Stack Nanodegree - Capstone Project - Casting Agency
 
-## Casting Agency Specs
+## Casting Agency - Specifications
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. 
 You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
 
-## Motivation for this project
+## Driver for putting up this project
 
-Capstone project of Udacity Fullstack Nanodegree program, allowing demonstration of varied aspects of Fullstack, including but not limited to SQLAlchemy (ORM), Postgres DB, Python Flask library, Auth0 authentication, Gunicorn Webserver and Render platform to develop and deploy APIs.
+Capstone project of Udacity Fullstack Nanodegree program, allowed demonstration of varied aspects of Fullstack, including but not limited to SQLAlchemy (ORM), Postgres DB, Python Flask library, Auth0 authentication, Gunicorn Webserver and Render platform to develop and deploy APIs. The Capstone project was followed by previous 4 projects which gradually built the concepts by focussed projects, leading upto the Capstone Project which is testing the knowledge on all the topics together.
 
 ## Getting Started
 
