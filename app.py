@@ -10,9 +10,9 @@ def create_app(test_config=None):
   # create and configure the app
   app = Flask(__name__)
   CORS(app)
-
   return app
 '''
+
 
 def create_app():
     # Create and Configure the app
@@ -26,7 +26,7 @@ def create_app():
     def health_check():
         return jsonify({"success": True, "message": "Home Route is Healthy!!"})
 
-    ############# Actors route #############
+    # Actors route #############
 
     # GET (SELECT) all actors
     @app.route('/actors', methods=['GET'])
@@ -105,9 +105,10 @@ def create_app():
         except Exception as e:
             print("Error occured during UPDATE, check with developer", e)
             abort(422)
-        return jsonify({"Patch success": True, "actor": upd_actor.serialized_actor()})
+        return jsonify({"Patch success": True,
+                        "actor": upd_actor.serialized_actor()})
 
-    ############# Movies route #############
+    # Movies route #############
 
     # GET (SELECT) all movies
     @app.route('/movies', methods=['GET'])
@@ -151,7 +152,8 @@ def create_app():
             abort(400)
         else:
             try:
-                s_movie = Movie(movie_title=movie_title, release_date=release_date)
+                s_movie = Movie(movie_title=movie_title,
+                                release_date=release_date)
                 s_movie.insert()
             except Exception as e:
                 print("Error occured during INSERT, check with developer", e)
@@ -181,10 +183,10 @@ def create_app():
         except Exception as e:
             print("Error occured during UPDATE, check with developer", e)
             abort(422)
-        return jsonify({"Patch success": True, "movie": upd_movie.serialized_movie()})
+        return jsonify({"Patch success": True,
+                        "movie": upd_movie.serialized_movie()})
 
-
-    ########### Error Handlers ###########
+    # Error Handlers ###########
 
     @app.errorhandler(400)
     def bad_request(error):
@@ -209,7 +211,7 @@ def create_app():
             "error": 403,
             "message": "Forbidden"
         }), 403
-    
+
     @app.errorhandler(404)
     def resource_not_found(error):
         return jsonify({
@@ -253,6 +255,7 @@ def create_app():
         }), error.status_code
 
     return app
+
 
 app = create_app()
 
