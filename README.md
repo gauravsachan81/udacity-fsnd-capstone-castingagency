@@ -65,7 +65,7 @@ https://ufsnd.uk.auth0.com/authorize?audience=http://casting-agency-api:5000&res
 Casting Assistant 
 (
     user       =   casting_assisstant@castingagency.com
-    password   =   Noida$2023
+    password   =   <contact to know>
 )
 
 Token
@@ -76,7 +76,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjctM01sbjdLNWV5SnNxM1F5VEhESiJ9.eyJ
 Casting director  
 (
     user        =   casting_director@castingagency.com
-    password    =   Noida$2023
+    password    =   <contact to know>
 )
 
 Token
@@ -87,7 +87,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjctM01sbjdLNWV5SnNxM1F5VEhESiJ9.eyJ
 Executive Producer 
 (
     user        =   casting_executive_producer@castingagency.com
-    password    =   Noida$2023
+    password    =   <contact to know>
 )
 
 Token
