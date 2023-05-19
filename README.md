@@ -12,6 +12,7 @@ Capstone project of Udacity Fullstack Nanodegree program, allowed demonstration 
 
 ### Installing Dependencies
 
+Python is the main language used in the project.
 #### Python 3.7.9
 [Python Instllation](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
 
